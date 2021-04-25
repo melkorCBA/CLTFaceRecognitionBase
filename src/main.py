@@ -16,7 +16,7 @@ faceCascade = cv2.CascadeClassifier(
 customClassifier = cv2.face.LBPHFaceRecognizer_create()
 customClassifier.read("cascades/classifier.yml")
 
-video_capture = cv2.VideoCapture(-1)
+video_capture = cv2.VideoCapture(0)
 frameId = 0
 faceId = 1
 captureLimit = 100
@@ -27,6 +27,10 @@ faceRecNoList = getFaceRecNoListFromJSON()
 
 while True:
     _, img = video_capture.read()
+    if img is None:
+        print("no camrea input!!")
+        continue;
+    
     faces = detect(img, frameId, faceCascade, "face")
     if(len(faces) > 0):
         # face detected
