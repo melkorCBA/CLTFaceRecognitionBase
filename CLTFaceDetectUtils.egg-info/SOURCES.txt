@@ -1,0 +1,8 @@
+README.md
+setup.py
+CLTFaceDetectUtils/__init__.py
+CLTFaceDetectUtils/faceDetection.py
+CLTFaceDetectUtils.egg-info/PKG-INFO
+CLTFaceDetectUtils.egg-info/SOURCES.txt
+CLTFaceDetectUtils.egg-info/dependency_links.txt
+CLTFaceDetectUtils.egg-info/top_level.txt
